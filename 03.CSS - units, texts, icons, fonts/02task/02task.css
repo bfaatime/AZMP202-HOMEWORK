@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+.card img {
+width: 40px;
+margin-bottom: 15px;
+height: 40px;
+}
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: black;
+}
+.card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: black;
+}
+.card button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 30px;
+}
+.twitter {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-color: aqua;
+    gap: 20px;
+}
+.instagram {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: pink;
+    gap: 20px;
+}
+.youtube {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-color: red;
+    gap: 20px;
+}
