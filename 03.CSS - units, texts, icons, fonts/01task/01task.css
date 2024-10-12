@@ -1,29 +1,37 @@
 * {
-   padding: 0; 
-   margin: 0;
+   padding: 0px; 
+   margin: 0px;
    box-sizing: border-box;
    text-align: center;
 }
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
 }
 .contanier {
 display: flex;
+gap: 20px;
 justify-content: space-around;
 align-items: center;
 height: 100vh;
 }
 .profile, .about {
     background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
     padding: 20px;
-    width: 150px;
-    border-radius: 50%;
+    text-align: center;
+    border-color: red;
+    gap: 20px;
 }
 .profile-img {
-    
-    width: 10%;
-    height: 10%;
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     padding: 10px;
     display: flex;
@@ -55,7 +63,7 @@ button {
 margin: 0 10px;
 }
 .icon i {
-    padding: 0 auto;
+padding: 0 auto;
 width: 30px;
 height: 30px;
 }
