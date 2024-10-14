@@ -8,6 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 10px;
 }
 .card-container {
     display: flex;
