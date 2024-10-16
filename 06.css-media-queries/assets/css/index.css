@@ -98,8 +98,14 @@ i{
     max-width: 100px;
   }
   footer p{
+    text-align: center;
     margin-top: 10px;
     color: #777;
+  }
+  footer .partners img{
+    display: flex;
+    width: 100px;
+    height: 100px;
   }
 
   
