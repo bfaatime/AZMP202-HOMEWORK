@@ -8,6 +8,7 @@
 }
 body{
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 header{
@@ -266,6 +267,7 @@ header .about img {
     text-align: center;
 }
 .team_img{
+    width: 100%;
     position: relative;
     text-align: center;
 }
