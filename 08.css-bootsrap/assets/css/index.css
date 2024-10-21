@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-div{
+    background-color: black;
+}
+.container-featured{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    padding-top: 50px;
+}
+.card{
+    border: 1px solid rgba(128, 128, 128, 0);
+}
+.card h1{
+    padding-top:10px;
+  text-align: center;
+}
+.card p{
+    text-align: center;
+    padding-top: 10px;
+}
+.card i{
+    text-align: center;
+    padding-top: 20px;
+    color: blue;
+   font-size: 40px;
+}
