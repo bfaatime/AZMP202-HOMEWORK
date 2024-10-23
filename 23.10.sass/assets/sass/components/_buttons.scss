@@ -1,0 +1,29 @@
+.buttons {
+    display: flex;
+    gap: 20px;
+  
+    .button-primary,
+    .button-secondary {
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+      transition: background-color 0.3s;
+  
+      &.button-primary {
+        background-color: #ff6b6b;
+  
+        &:hover {
+          background-color: #ff3b3b;
+        }
+      }
+  
+      &.button-secondary {
+        background-color: #4f4f5f;
+  
+        &:hover {
+          background-color: #3a3a4f;
+        }
+      }
+    }
+  }

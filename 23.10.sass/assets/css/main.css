@@ -1,0 +1,164 @@
+** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-size: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #1d1d2c;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-right: 20px;
+}
+
+.navbar .nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar .contact-btn {
+  background-color: #ffffff;
+  color: #1d1d2c;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #1d1d2c;
+  color: #ffffff;
+}
+
+.hero .hero-text {
+  flex: 1;
+}
+
+.hero .hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero .hero-text p {
+  margin-bottom: 20px;
+}
+
+.hero .hero-buttons {
+  display: flex;
+}
+
+.hero .hero-buttons button {
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.hero .how-we-work-btn {
+  background-color: #f15123;
+  color: #ffffff;
+  border: none;
+}
+
+.hero .contact-us-btn {
+  background-color: transparent;
+  color: #f15123;
+  border: 2px solid #f15123;
+}
+
+.hero .hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+footer {
+  background-color: #f9f4f2;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer .stats {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .stats .stat-item {
+  text-align: center;
+}
+
+footer .stats .stat-item h3 {
+  font-size: 2.5rem;
+  color: #f15123;
+}
+
+footer .stats .stat-item p {
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .nav-links {
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero .hero-image {
+    margin-top: 20px;
+  }
+
+  footer .stats {
+    flex-direction: column;
+  }
+
+  footer .stats .stat-item {
+    margin-bottom: 20px;
+  }
+}

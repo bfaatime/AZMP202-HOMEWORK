@@ -1,0 +1,39 @@
+.navbar {
+    background-color: $secondary-color;
+    padding: 20px;
+    @include flex(space-between, center);
+
+    .logo {
+        font-size: 24px;
+        color: $white;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+
+        li {
+            margin-right: 20px;
+
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .contact-btn {
+        background-color: $white;
+        color: $secondary-color;
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+
+    @include respond-to(small) {
+        flex-direction: column;
+        .nav-links {
+            margin-top: 10px;
+        }
+    }
+}
