@@ -1,0 +1,13 @@
+.buttons {
+    display: flex;
+    gap: 20px;
+    .btn-phone{
+      width: 80px;
+      height: 50px;
+      background-color: orangered;
+      i{
+        color: white;
+        font-weight: 300px;
+      }
+    }
+}

@@ -1,0 +1,23 @@
+// Media query mixin
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == small {
+        @media (max-width: #{$breakpoint-sm}) { @content; }
+    }
+    @if $breakpoint == medium {
+        @media (max-width: #{$breakpoint-md}) { @content; }
+    }
+    @if $breakpoint == large {
+        @media (max-width: #{$breakpoint-lg}) { @content; }
+    }
+    @if $breakpoint == xlarge {
+        @media (max-width: #{$breakpoint-xl}) { @content; }
+    }
+}
+
+// Flexbox mixin
+@mixin flex($justify: flex-start, $align: stretch, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
