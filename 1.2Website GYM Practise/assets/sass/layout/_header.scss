@@ -219,6 +219,7 @@ padding: 4rem;
       }
 }
 .team-area{
+    background-color: ghostwhite;
     .row{
         display: flex;
         align-items: center;
@@ -229,10 +230,29 @@ padding: 4rem;
     }
     .team-title{
         text-align: center;
+        h1{
+            font-size: 38px;
+            font-weight: bold;
+            padding-top: 50px;
+        }
+        p{
+            padding-top: 20px;
+            color: gray;
+          
+        }
     }
     .meta-text{
         margin-top:30px ;
         text-align: center;
+        h4{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        p{
+            font-size: 16px;
+            padding-top: 5px;
+            color: gray;
+        }
     }
     .thumb{
         position: relative;
@@ -252,4 +272,94 @@ padding: 4rem;
             transition: opacity 0.5s;
         }
     }
+}
+.price-area{
+    padding-top:100px ;
+    .menu{
+        display: flex;
+        justify-content: center;
+        .menu-content{
+            padding-bottom: 60px;
+        }
     }
+    .price-title{
+        text-align: center;
+       h1{
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 10px;
+       }
+       p{
+        color: gray;
+        font-size: 18px;
+       }
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px
+
+    }
+    .top-sec{
+        background-color: ghostwhite;
+        padding: 40px 40px 22px 40px;
+        border-bottom: 1px solid #eeeeee;
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-left{
+        h4{
+font-weight: bold;
+font-size: 16px;
+        }
+    }
+    .top-right{
+        font-size: 36px;
+    }
+    .bottom-sec{
+        border-bottom: 1px solid #eeeeee;
+        padding: 40px 40px 22px 40px;
+background-color: ghostwhite;
+p{
+    color: gray;
+}
+    }
+    .end-sec{
+        color: gray;
+        border-bottom: 1px solid #eeeeee;
+        background-color: ghostwhite;
+        padding: 40px 40px 22px 40px;
+        li{
+           font-size: 24px;
+           padding: 10px;
+           color: gray;
+           display: list-item;
+        }
+}
+}
+.brand-area{
+    .row{
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        img{
+            display: block;
+        }
+    }
+}
+.callto-area{
+   position: relative; 
+   .row{
+    justify-content: center;
+    h1{
+        color:rgb(0, 0, 0);
+    }
+    p{
+        color: black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+   }
+}

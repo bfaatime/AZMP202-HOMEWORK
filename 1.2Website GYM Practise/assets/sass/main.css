@@ -366,6 +366,9 @@ h1, h2, h3, h4, h5, p {
   padding: 1rem 1rem;
 }
 
+.team-area {
+  background-color: ghostwhite;
+}
 .team-area .row {
   display: flex;
   align-items: center;
@@ -377,9 +380,27 @@ h1, h2, h3, h4, h5, p {
 .team-area .team-title {
   text-align: center;
 }
+.team-area .team-title h1 {
+  font-size: 38px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+.team-area .team-title p {
+  padding-top: 20px;
+  color: gray;
+}
 .team-area .meta-text {
   margin-top: 30px;
   text-align: center;
+}
+.team-area .meta-text h4 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.team-area .meta-text p {
+  font-size: 16px;
+  padding-top: 5px;
+  color: gray;
 }
 .team-area .thumb {
   position: relative;
@@ -398,6 +419,94 @@ h1, h2, h3, h4, h5, p {
   color: #fff;
   opacity: 0;
   transition: opacity 0.5s;
+}
+
+.price-area {
+  padding-top: 100px;
+}
+.price-area .menu {
+  display: flex;
+  justify-content: center;
+}
+.price-area .menu .menu-content {
+  padding-bottom: 60px;
+}
+.price-area .price-title {
+  text-align: center;
+}
+.price-area .price-title h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.price-area .price-title p {
+  color: gray;
+  font-size: 18px;
+}
+.price-area .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.price-area .top-sec {
+  background-color: ghostwhite;
+  padding: 40px 40px 22px 40px;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+}
+.price-area .top-left h4 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.price-area .top-right {
+  font-size: 36px;
+}
+.price-area .bottom-sec {
+  border-bottom: 1px solid #eeeeee;
+  padding: 40px 40px 22px 40px;
+  background-color: ghostwhite;
+}
+.price-area .bottom-sec p {
+  color: gray;
+}
+.price-area .end-sec {
+  color: gray;
+  border-bottom: 1px solid #eeeeee;
+  background-color: ghostwhite;
+  padding: 40px 40px 22px 40px;
+}
+.price-area .end-sec li {
+  font-size: 24px;
+  padding: 10px;
+  color: gray;
+  display: list-item;
+}
+
+.brand-area .row {
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.brand-area .row img {
+  display: block;
+}
+
+.callto-area {
+  position: relative;
+}
+.callto-area .row {
+  justify-content: center;
+}
+.callto-area .row h1 {
+  color: rgb(0, 0, 0);
+}
+.callto-area .row p {
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 * {
@@ -630,6 +739,12 @@ h1, h2, h3, h4, h5, p {
   cursor: pointer;
   border: none;
   margin-top: 50px;
+}
+
+.price-btn {
+  border-radius: 0px;
+  background-color: black;
+  color: white;
 }
 
 .navbar {
