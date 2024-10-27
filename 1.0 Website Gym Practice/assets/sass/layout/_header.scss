@@ -1,17 +1,12 @@
 .navbar{
     position: fixed;
-      display: flex;
+ display: flex;
       justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    padding: 0 20px;
     h1{
       font-weight: bold;
     }
   }
   .navbars{
-    position: fixed;
     text-align: center;
     justify-content: center;
     ul{

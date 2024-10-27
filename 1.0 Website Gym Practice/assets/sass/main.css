@@ -146,17 +146,12 @@ table {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 .navbar h1 {
   font-weight: bold;
 }
 
 .navbars {
-  position: fixed;
   text-align: center;
   justify-content: center;
 }
@@ -389,36 +384,89 @@ table {
   color: white;
   font-weight: 300px;
 }
-
-.partners {
-  padding: 50px 0;
-  background-color: #fff;
+.buttons .btn-calculate {
+  color: white;
+  font-size: 12px;
+  padding: 12px;
+  border-radius: 0;
+  background: transparent;
+  border-color: #f96481;
+  transition: all 0.3s ease 0s;
+  line-height: 42px;
+  font-weight: 500;
 }
-.partners .container {
-  max-width: 1200px;
-  margin: 0 auto;
+
+main .home {
+  position: relative;
+}
+main .home .image {
+  width: 100%;
+  position: relative;
+}
+main .home .home-text {
+  position: absolute;
+  z-index: 5;
+  justify-content: center;
   text-align: center;
 }
-.partners h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #333;
+main .home .home-text h1 {
+  font-size: 58px;
+  font-weight: bold;
+  color: white;
 }
-.partners .partner-logos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 50px;
+main .home .home-text p {
+  color: wheat;
 }
-.partners .partner-logos img {
-  max-width: 150px;
-  margin: 0 10px;
+main .home .navbars {
+  background-image: url(https://preview.colorlib.com/theme/gym/img/header-bg.jpg);
 }
-@media (max-width: 768px) {
-  .partners .partner-logos {
-    flex-direction: column;
-  }
-  .partners .partner-logos img {
-    margin-bottom: 20px;
-  }
+main .we-offer {
+  justify-content: center;
+}
+main .we-offer .we-offer-text {
+  text-align: center;
+  justify-content: center;
+}
+main .we-offer .box {
+  border: 1px solid none;
+  box-shadow: darkmagenta;
+  justify-content: center;
+  text-align: center;
+}
+main .calculate .calculate-text {
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+}
+main .calculate input {
+  color: white;
+  font-size: 12px;
+  padding: 12px;
+  border-radius: 0;
+  background: transparent;
+  border-color: #f96481;
+}
+main .top-course .course-title {
+  justify-content: center;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+}
+main .single-course h4 {
+  float: right;
+  color: orangered;
+}
+main .thumb {
+  position: relative;
+}
+main .course-status {
+  position: absolute;
+  padding-top: 40px;
+  border: 1px solid orangered;
+  background-color: orangered;
+}
+main .right {
+  float: inline-start;
+  font-size: 20px;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

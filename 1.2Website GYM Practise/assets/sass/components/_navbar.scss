@@ -1,0 +1,55 @@
+.navbar{
+    z-index: 5;
+   .row{
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+   justify-content: center;
+   text-align: center;
+   .building{
+    padding-top: 0;
+   }
+   .tel{
+    color: black;
+    font-weight: bold;
+    padding-right: 20px;
+   }
+   }
+   .navbars{
+    width: 100%;
+display: flex;
+padding-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    nav{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        
+    }
+ul{
+    display: flex;
+   
+}
+li{
+    margin-left: 10px;
+}
+select{
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+    nav a{
+        font-weight: bold;
+        padding: 0 8px 0px 8px;
+        text-decoration: none;
+        display: inline-block;
+        color: #222;
+        font-size: 12px;
+        text-transform: uppercase;
+        outline: none
+    }
+   }
+}

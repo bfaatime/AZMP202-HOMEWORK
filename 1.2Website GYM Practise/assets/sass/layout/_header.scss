@@ -1,0 +1,186 @@
+.home{
+    width: 100%;
+    height: 750px;
+   margin-top: 150px;
+   background-image: url(https://preview.colorlib.com/theme/gym/img/header-bg.jpg);
+.home-text{
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 250px;
+    font-weight: 800;
+    p{
+        font-size: 26px;
+        font-weight: 300;
+    }
+}
+}
+.we-offer{
+    .we-offer-text{
+        text-align: center;
+        justify-content: center;
+        padding-top: 100px;
+        h1{
+            font-size: 38px;
+            font-weight: 600;
+        }
+        p{
+            padding-top: 10px;
+            font-size: 16px;
+            color: gray;
+        }
+    }
+    .row{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+   margin-left: 150px;
+   margin-right: 150px;
+   margin-top: 80px;
+   margin-bottom: 80px;
+    }
+    .box{
+        border-radius: 10px;
+        width: 350px;
+        height: 300px;
+        box-shadow: 0px 20px 60px 0px rgba(246, 33, 75, 0.3);
+        img{
+            padding-top: 20px;
+        }
+    h3{
+        text-align: center;
+        justify-content: center;
+        padding-top: 50px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    p{
+        line-height: 1.625em;
+        margin: 2rem;
+font-size: 16px;
+        color: gray;
+    }
+}
+}
+.calculate{
+background-color: #f6214b;
+height: 400px;
+.container{
+    justify-content: center;
+text-align: center;
+padding: 4rem;
+.calculate-text{
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    h1{
+        font-size: 36px;
+        font-weight: 600;
+        color: white;
+        line-height: 1.2em;
+    }
+    p{
+        color: white;
+    }
+}
+.form-control{
+    margin-top: 50px;
+    border: 1px solid #ced4da;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 0;
+    background: transparent;
+    border-color: #f96481
+}
+}
+
+}
+.top-course{
+    background-color: #f6f6f6;
+    .course-title{
+       text-align: center;
+       justify-content: center;
+      margin: 5rem;
+      padding-left: 200px;
+        h1{
+            font-size: 36px;
+            font-weight: 600;
+            color: black;
+            line-height: 1.2em;
+        }
+        p{
+            color: gray;
+        }
+    }
+    .single-course{
+        h4{
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 500;
+           }
+      p{
+        float:right;
+        font-weight: 600;
+        color: #f6214b;
+        margin-top: -20px;
+      }
+    }
+    img{
+        position: relative;
+    }
+        .course-status{
+            position: absolute;
+           border: 1px solid none; 
+           background-color: #f6214b;
+           color: white;;
+           width: 190px;
+           height: 40px;
+           margin-top: -50px;
+           margin-left: 20px;
+           text-align: center;
+           justify-content: center;
+           padding-top: 10px;
+           
+}
+}
+.feature-area {
+    background-color: #222;
+    .container-fluid{
+        width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        img{
+            max-width: 100%;
+            height: auto
+        }
+        h6{
+            color: white;
+            text-transform: uppercase !important;
+                font-weight: 100;
+                letter-spacing: 2px;
+        }
+        h1{
+            color: #f6214b;
+            font-size: 35px;
+            padding: 15px 0;
+        }
+        p{
+            color: #777777;
+            padding-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+        }
+    }
+}
