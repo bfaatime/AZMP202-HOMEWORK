@@ -1,47 +1,52 @@
-// task -01-
-
-// let number = 123 ("3  rəqəmli bir ədəd daxil edin:"); 
-// let yuz = Math.floor(number / 100);
-// let on = Math.floor((number % 100) / 10);
-// let tek = number % 10;
-
-// if (number >= 100 && number <= 999) {
-//     let sum = 0;
-//     let product = 1;
-
-//     for (let i = 0; i < 3; i++) {
-//         let eded = number % 10; 
-//         sum += eded;            
-//         product *= eded;        
-//         number = Math.floor(number / 10); 
-//     }
-    
-//     // ədədi orta
-//     let average = sum / 3;
-//     console.log("Rəqəmlərin cəmi: ${sum}`);
-//     console.log("Rəqəmlərin hasil: ${product}");
-//     console.log("Rəqəmlərin ədədi ortası: ${average}");
-// } else {
-//     alert("Zəhmət olmasa, 3 rəqəmli bir ədəd daxil edin.");
+// extra task
+//#  0 - 100 arası yalnız sadə ədədləri console'da çap edin
+// for (let number = 1; number <= 100; number++) {
+// let isPrime = true;
+// if (number === 1) continue;
+// for (let j = 2; j < number; j++) {
+//    if (number % j === 0 ) {
+//     isPrime = False;
+//     break;
+//    }
+// } 
+// isPrime && console.log(number);
 // }
 
 
 
+// # const fruits = ["alma", "banan", "qarpız","portağal  ", "ananas", "nar"]; array daxilindəki ən uzun sözü tapan alqoritm yazın
+
+// const fruits = ["alma", "banan", "qarpız", " portağal  ", "ananas", "nar"];
+// let maxLengthElements = fruits[0];
+// for (let i = 1; i < fruits.length; i++) {
+//    if(fruits[i].length > maxLengthElements){
+//     maxLengthElements = fruits[i]
+//    }
+// }
+ 
+
+// task01
+// let number= 327;
+
+// let a = num % 10;
+// let b = ((num % 100) - a) / 10;
+// let c = (num - (a+ b *10) / 100);
+// console.log(a, b, c);
+// let multiply = a * b *c;
+// let avarage = (a + b + c) / 3;
+// console.log("multiply", multiply);
+// console.log("avarage", avarage);
+
 
 // task02
 // let n = parseInt(prompt("Bir ədəd daxil edin:"));
-
-// console.log(`${n} ədədinin bütün bölənləri:`);
-
+// console.log("${n} ədədinin bütün bölənləri:");
 // // Bölənləri tapmaq
 // for (let i = 1; i <= n; i++) {
 //     if (n % i === 0) {
 //         console.log(i);
 //     }
 // }
-
-
-
 
 // tas03
 // let n = parseInt(prompt("Bir ədəd daxil edin:"));
@@ -150,3 +155,4 @@
 // }
 
 // console.log("Boşluq sayı: ${bosluq}");
+
