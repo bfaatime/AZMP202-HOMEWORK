@@ -25,6 +25,25 @@
 // }
  
 
+// # product arrayindəki producların qiymətləri cəmini və ortalamasını tapın.
+// const products = [
+//     { id: 1, title: "Smartphone", description: "A high-end smartphone with the latest features.", price: 799.99 },
+//     { id: 2, title: "Laptop", description: "Powerful laptop with a large screen and fast processor.", price: 1299.99 },
+//     { id: 3, title: "Coffee Maker", description: "An automatic coffee maker with a built-in grinder.", price: 99.99 },
+//     { id: 4, title: "Headphones", description: "Wireless over-ear headphones with noise-cancellation.", price: 199.99 },
+//     { id: 5, title: "Smart TV", description: "55-inch 4K Smart TV with streaming apps built-in.", price: 699.99 },
+//   ];
+  
+//   // Qiymətlərin cəmi
+//   const totalPrice = products.reduce((sum, product) => sum + product.price, 0);
+  
+//   // Qiymətlərin ortalaması
+//   const averagePrice = totalPrice / products.length;
+  
+//   console.log("Cəm:", totalPrice.toFixed(2));
+//   console.log("Ortalama:", averagePrice.toFixed(2));
+
+
 // task01
 // let number= 327;
 
@@ -153,6 +172,77 @@
 //         bosluq++; //
 //     }
 // }
-
 // console.log("Boşluq sayı: ${bosluq}");
 
+// TASK_14 Daxil olunan ədədin array-də olub olmadığını təyin edən proqram tərtib edin.
+// const number = parseInt(prompt("ədəd daxil edin :"));
+// const array = [1, 2, 3, 4, 5]; 
+// let found = false;
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] === number) {
+//         found = true;
+//         break;
+//     }
+// }
+// if (found) {
+//     console.log(`${number} ədəd array-də var.`);
+// } else {
+//     console.log(`${number} ədəd array-də yoxdur.`);
+// }
+
+
+// TASK-15
+//  const students = [
+//     { name: "Ali", scores: [90, 85, 92] },
+//     { name: "Mammal", scores: [75, 80, 85] },
+//     { name: "Camil", scores: [90, 95, 85] },
+//     { name: "Davud", scores: [100, 100, 100] }
+//   ];
+//    tələbələr array-ində tələbələrin ortalaması ən yüksək olanı,
+//   ortalaması 90-dan yuxarı olanları tapan proqram yazın
+
+
+// let yuksekOrtalamaliTelebe = "";
+// let yuksekOrtalama = 0;
+// const above90Students = [];
+
+// // Tələbələri yoxlayın
+// for (let i = 0; i < students.length; i++) {
+//     const scores = students[i].scores;
+//     let total = 0;
+
+//     // Ortalamayı hesabla
+//     for (let j = 0; j < scores.length; j++) {
+//         total += scores[j];
+//     }
+//     const ortalama = total / scores.length;
+
+//     // Ortalaması 90-dan yuxarı olanları toplayın
+//     if (average > 90) {
+//         above90Students.push(students[i].name);
+//     }
+
+//     // Ortalaması ən yüksək olanı tapın
+//     if (ortalama > yuksekOrtalama) {
+//         yuksekOrtalama = ortalama;
+//         yuksekOrtalamaliTelebe = students[i].name;
+//     }
+// }
+// console.log(`Ortalaması ən yüksək olan tələbə: ${yuksekOrtalamaliTelebe}`);
+// console.log(`Ortalaması 90-dan yuxarı olan tələbələr: ${above90Students.join(", ")}`);
+
+// TASK-16 16.Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards).
+// racecar - polidromdur
+// hello - polidrom deyil
+
+// const testStrings = ["racecar", "hello"];
+
+// for (let str of testStrings) {
+    
+
+//     if (cleanedStr === reversedStr) {
+//         console.log(`${str} - polidromdur`);
+//     } else {
+//         console.log(`${str} - polidrom deyil`);
+//     }
+// }
