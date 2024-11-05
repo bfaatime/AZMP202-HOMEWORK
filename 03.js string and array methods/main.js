@@ -193,7 +193,20 @@
 //   console.log('Google does not exist in the array.');
 // }
 
-// // 7
+// let res = {}
+// for (let i = 0; i < itCompanies.length; i++) {
+//     if (itCompanies[i].toLowerCase().includes("o") &&
+//         itCompanies.toLowerCase().indexOf("o") !==
+//     itCompanies[i].toLowerCase().lastIndexOf) {
+//         console.log(itCompanies[i]);
+        
+//     }
+    
+// // }
+// console.log(res);
+
+
+
 // const companiesWithMoreThanOneO = [];
 // itCompanies.forEach(company => {
 //   const count = company.split('o').length - 1;
@@ -207,7 +220,7 @@
 
 // 5)  Bir function yazın, parametr olaraq 2 array qebul edir və bir char qebul edir.gonderilmish char-a esasen hemin iki array-i ve elementlerini birleshdirib bir string olaraq return etmelidir. Meselen -> [1,2] [3,4] '*' gonderilerse output -> 1*2*3*4 string-i olmalidir.
 
-// function Char(array1, array2, char) {
+// function char(array1, array2, char) {
 //     const Array = array1.concat(array2);
     
 //     return Array.join(char);
