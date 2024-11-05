@@ -1,6 +1,6 @@
 // // SUAL-1. Göndərilmiş 2 ədəddən 1-cisini 2-cisinin qüvvətinə yüksəldən function. Misalçün function-a gələn _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 // ilk arqumenti 2-ci arqument qədər qüvvətə yüksəldən function - dəyərləri prompt vasitəsi ilə qəbul edib function-a göndərin)
-// // function power(base, exponent) {
+// function power(base, exponent) {
 //     return Math.pow(base, exponent);
 // }
 
@@ -51,7 +51,27 @@
 // sentenceCapitalization("a short sentence")
 // Expected Output:
 // "A Short Sentence"
+// 1-ci usulla)))))))))))))))))))))))))))))))))))))))))))))))))))))))
+// function sentenceCapitalization(sentence){
+//     let result="";
+// let newword = true;
+// //     for (let i = 0; i < sentence.length; i++) {
+// //      
+// //       if (sentence[i] == " " && newword === true){
+// //         result +=sentence[i].toUpperCase();    
+//          newword = false;  
+// //     }   }else{
+// //         result +=sentence[i];
 
+// //       }
+// //     if (sentence[i] == " ")  {
+// //       newword =true;
+// //       }
+// //     return result;
+// // }
+    //    console.log(sentenceCapitalization("short sentence"));
+
+// 2-ci usulla)))))))))))))))))))))))))))))))))))))))))))))))))))))))))
 // function sentenceCapitalization(sentence) {
 //     return sentence
 //         .map(word => word.charAt(0).toUpperCase() + word.slice(1));
@@ -84,9 +104,10 @@
 // const say = sozleriSay(cumle);
 // console.log(`Cümlədə ${say} söz var.`);
 
-// SUAL_8Write a method that returns a duplicate-free array.- - - - - - - -- - - -- - - - -- - - - - -- - - - - - - - - -  --- - - - - -- - - -- -- -- - -- - - - -
-// console.log(clearDuplicate([1, 2, 1, 2, 3])); -> [1, 2, 3]
+// SUAL_8 .log(clearDuplicate([1, 2, 1, 2, 3])); -> [1, 2, 3]
 // console.log(clearDuplicate(['a', 2, 'd', 2, 'a', 14, 14, 's', false])); -> ['a', 2, 'd', 14, 's', false]
+
+// !1-ci usulla bele yazmisam))))))))
 
 
 // function clearDuplicate(arr) {
@@ -94,6 +115,28 @@
 // }
 // console.log(clearDuplicate([1, 2, 1, 2, 3]));
 // console.log(clearDuplicate(['a', 2, 'd', 2, 'a', 14, 14, 's', false])); 
+
+
+
+// !2-ci usulla  bele yazmisam)))))))))))))))))))
+// const clearDuplicate =(arr)=> {
+//     const result ={};
+//     for (let i = 0; i < arr.length; i++) {
+//   let isDublicate = false;
+//   for (let j = 0; j < result.length; j++) {
+//     if (arr[i] === result[j])
+//     let isDublicate=true;
+// break;
+    
+//   }
+//   if(!isDublicate){
+//     result.push(arr[i]);
+//   }
+        
+//     }
+//     return result;
+// }
+
 
 // SUAL-10. const countries = ["Finland", "Denmark", "Sweden", "Norway", "Iceland"]; // array of strings, countries- - - - - - - - - - - - - -- - - - - -- - - - - - --
 // countries arrayindəki ölkələrin ilk 3 hərfini (hər bir hərf böyük olmalıdır) yeni arrayda yığın
@@ -105,3 +148,41 @@
 
 // console.log(result); 
 
+
+
+// 11.
+//  Write a JavaScript program(function) that accepts a string as input and swaps the case of each character. For example, if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'Example: 
+// console.log(convert('saLamNecesen)) -> SAlAMnECESEN
+
+// function convert(str) {
+//     let result = "";
+// if(str[i] ===  str[i].toLowerCase())
+//         result += str[i].toUpperCase
+//     }else{
+//         result += str[i].toLowerCase
+//     }
+// }
+
+
+
+
+
+// 12. - - - - - - -- - -  - - - --  --  ----- -- -  --  - - - --  -- -- - - - - - - -- - - - - - - - -  -- - - - -- - - - -- 
+
+// Write a function that compares two arrays and returns true if they are identical.
+// console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4])) -> true
+// console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4, 5])) -> false
+// console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4, false])) -> false
+// console.log(isEqual([1, 2, 3, 4, false], [1, 2, 3, 4, false])) -> true
+
+// function isEqual( arr1, arr2) {
+//     if (arr1.length !== arr2.length) {
+//         return false;
+//     }
+//     for (let i = 0; i < arr1.length; i++) {
+// if( arr1[1] !== arr2[2]) {
+//     return false;
+// }       
+//     }
+//     return true;
+// }
