@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Size and Color Changer</title>
+  <style>
+    #text {
+      font-size: 16px;
+      color: black;
+      margin-top: 20px;
+    }
+    #controls {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="controls">
+    <button onclick="increaseFont()">+</button>
+    <button onclick="decreaseFont()">-</button>
+    <input type="text" id="colorInput" placeholder="Enter color (e.g., red or #ff0000)">
+    <button onclick="applyColor()">Apply</button>
+  </div>
+
+  <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+    Nulla quis lorem ut libero malesuada feugiat.<br>
+    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+  </p>
+
+  <script src="./01task.js"> </script>
+
+</body>
+</html>
