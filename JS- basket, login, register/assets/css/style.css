@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+nav {
+    background-color: white;
+    color: rgb(0, 140, 255);
+    padding: 10px;
+    text-align:center;
+}
+nav a {
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(0, 119, 210);
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.car-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.car-card {
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding-left: 1rem;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-card img {
+    padding-top: 30px;
+    width: 60%;
+    border-radius: 10px;
+}
+.car-card .png{
+    width: 40%;
+    display: flex;
+    margin-top: 50px;
+    gap: 10px;
+    padding: 1rem ;
+}
+.car-card h1{
+    padding-top: 10px;
+    font-size: 26px;
+}
+.car-card span{
+    font-size: 22px;
+    color: gray;
+}
+#i{
+    padding-left: 70px;
+    font-size: 25px;
+    color: red;
+}
+.car-card button {
+    background-color: rgb(63, 118, 222);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.car-card button:hover {
+    background-color: rgb(1, 41, 115);
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: white;
+}
