@@ -24,10 +24,10 @@ body {
   .card, .gallery-card {
     text-align: center;
   }
-  /* .card {
+  .card {
     width: 200px;
     text-align: center;
-  } */
+  }
   .image-container {
     position: relative;
     overflow: hidden;
