@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+  }
+#submit{
+  margin-top: 30px;
+  color: white;
+  background-color: rgb(26, 109, 226);
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 9px;
+}
+.form-container h1{
+  text-align: center;
+}
+.form-container input{
+ width: 600px;
+ height: 30px;
+ margin: 20px;
+ margin-left: -2px;
+}
+
+  
+  
