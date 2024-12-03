@@ -1,68 +1,128 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Google Fonts-dan istifadə edilmiş font */
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    gap: 10px;
+    background-color: #f4f4f4;
+    margin: 0;
 }
-.card-container {
+
+
+.card.container {
     display: flex;
+    justify-content: space-between; 
     gap: 20px;
+    width: 50%;
+    height: 300px;
+    flex-wrap: wrap;  
 }
-.card img {
-width: 40px;
-margin-bottom: 15px;
-height: 40px;
+
+
+.card div {
+    background-color: white;
+    width: 30%; 
+    padding: 30px;  
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid black;  
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
 }
-.card h3 {
-    font-size: 18px;
+
+
+.card div:hover {
+    border: none;
+    background-color: #e1e1e1;  
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+.card .instagram:hover {
+    background-color: #ff9dd48a;
+}
+.card .youtube:hover {
+    background-color:#cc0000;
+}
+.card .twitter:hover {
+    background-color:#1DA1F2;
+}
+
+.card div .fa {
+    font-size: 40px;
     margin-bottom: 15px;
-    color: black;
+    transition: color 0.3s ease;
 }
-.card p {
+
+.card div .fa-twitter {
+    font-size: 53px;
+    color: #1DA1F2; 
+}
+
+.card div .fa-instagram {
+    font-size: 53px;
+    color: #E4405F; 
+}
+
+.card div .fa-youtube {
+    font-size: 53px;
+    color: #FF0000; 
+}
+
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+p {
     font-size: 14px;
-    margin-bottom: 20px;
-    color: black;
+    color: #666;
+    margin-bottom: 15px;
 }
-.card button {
-    background-color: black;
+
+
+button {
+    padding: 10px 15px;
+    background-color: black; /* Twitter düyməsi üçün */
     color: white;
-    padding: 10px 20px;
-    border:none;
-    border-radius: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.twitter {
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 200px;
-    padding: 20px;
-    text-align: center;
-    border-color: aqua;
-    gap: 20px;
+
+
+
+
+
+.card div:nth-child(1) button {
+    background-color: black;
 }
-.instagram {
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 200px;
-    padding: 20px;
-    text-align: center;
-    background-color: pink;
-    gap: 20px;
+
+.card div:nth-child(1) button:hover {
+    background-color: rgb(15, 168, 219);
 }
-.youtube {
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 200px;
-    padding: 20px;
-    text-align: center;
-    border-color: red;
-    gap: 20px;
+.card div:nth-child(1) button {
+    background-color: black;
+}
+
+.card div:nth-child(2) button:hover {
+    background-color: #c13584;
+}
+
+
+.card div:nth-child(3) button {
+    background-color: black;
+}
+
+.card div:nth-child(3) button:hover {
+    background-color: #cc0000;
 }
