@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="form-container" id="loginForm">
+      <h1>Login Form</h1>
+      <br>
+      <input type="text" id="loginUsername" placeholder="User name or email" required/>
+      <br>
+      <input type="password" id="loginPassword" placeholder="Password" required/>
+      <br>
+      
+      <a href="#" onclick="showRegisterForm()">Do not have an account?</a>
+      <br>
+      <button id="submit" onclick="login()">Submit</button>
+      
+    </div>
+    <div class="form-container" id="registerForm" style="display: none">
+      <h1>Register Form</h1>
+      <br>
+      <input type="text" id="registerUsername" placeholder="User name" required/>
+      <br>
+      <input type="email" id="registerEmail" placeholder="Email address" required />
+      <br>
+      <input type="password" id="registerPassword" placeholder="Password" required/>
+      <br>
+      <a href="#" onclick="showLoginForm()">Do you have an account?</a>
+      <br>
+      <button id="submit" onclick="register()">Submit</button>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
