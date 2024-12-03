@@ -1,3 +1,4 @@
+/* Global reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,20 +8,26 @@
   list-style: none;
 }
 
+html, body {
+  width: 100%; /* Prevent horizontal scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Body styling */
 body {
   font-family: Arial, sans-serif;
   background-color: white;  
   color: black;  
 }
 
-
+/* Container */
 .container {
-  max-width: 80%;
+  max-width: 100%;  /* Make container responsive */
   margin: 0 auto;
   padding: 20px;
 }
 
-
+/* Header styling */
 header {
   background-color: #202020; 
   padding: 20px 0;
@@ -57,55 +64,73 @@ header nav ul li a:hover {
   color: #007BFF;
 }
 
-
-
-
-
-
+/* Main section */
 main {
   padding: 40px 0;
 }
 
-
-section.aside {
-  padding: 40px 0;
-}
-
+/* Grid system with responsiveness */
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.col-6 {
-  width: 48%;
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-.col-6 img {
-  width: 100%;
-  height: auto;
+.col-1 { width: calc(100% / 12 * 1); }
+.col-2 { width: calc(100% / 12 * 2); }
+.col-3 { width: calc(100% / 12 * 3); }
+.col-4 { width: calc(100% / 12 * 4); }
+.col-5 { width: calc(100% / 12 * 5); }
+.col-6 { width: calc(100% / 12 * 6); }
+.col-7 { width: calc(100% / 12 * 7); }
+.col-8 { width: calc(100% / 12 * 8); }
+.col-9 { width: calc(100% / 12 * 9); }
+.col-10 { width: calc(100% / 12 * 10); }
+.col-11 { width: calc(100% / 12 * 11); }
+.col-12 { width: calc(100% / 12 * 12); }
+
+/* Responsive adjustments using media queries */
+@media (max-width: 768px) {
+  .col-6, .col-12 {
+    width: 100%; /* Full width on medium screens */
+  }
 }
 
-h1 {
-  color: #333;  
+@media (max-width: 480px) {
+  .col-6, .col-12 {
+    width: 100%; /* Full width on small screens (mobile phones) */
+  }
+
+  header nav ul {
+    flex-direction: column; /* Stack the menu vertically on small screens */
+    text-align: center;
+  }
+  
+  .header .logo {
+    font-size: 20px; /* Reduce logo size on smaller screens */
+  }
 }
 
-.p {
-  color: rgba(178, 177, 177, 0.98);
-  font-size: 20px;
-}
-
-button.getstarted {
+/* Buttons styling */
+button.getstarted, button.learnmore {
   width: 150px;
   height: 45px;
   margin-top: 20px;
   border-radius: 8px;
-  color: white;
-  background-color: #3642ff;
-  border: none;
-  cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.getstarted {
+  background-color: #3642ff;
+  color: white;
+  border: none;
 }
 
 button.getstarted:hover {
@@ -113,16 +138,9 @@ button.getstarted:hover {
 }
 
 button.learnmore {
-  width: 150px;
-  height: 45px;
-  border-radius: 8px;
-  margin-top: 20px;
   background-color: transparent;
   border: 2px solid #3642ff;
   color: #3642ff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button.learnmore:hover {
@@ -130,7 +148,7 @@ button.learnmore:hover {
   color: white;
 }
 
-
+/* Services Section */
 section.services {
   padding: 40px 0;
   background-color: #f8f9fa;
@@ -168,21 +186,7 @@ p {
   color: #777;
 }
 
-
-section.about1 {
-  background-color: #e9ecef;
-  padding: 40px;
-  text-align: center;
-}
-
-section.about1 p {
-  font-size: 18px;
-  color: #333;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-
+/* Products Section */
 section.products {
   padding: 40px 0;
   background-color: #f8f9fa;
@@ -190,13 +194,15 @@ section.products {
 
 .card {
   width: 100%;
+  max-width: 350px;
   border: 1px solid #ddd;
   background-color: white;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  margin: 0 auto;
 }
 
 .card img {
@@ -237,7 +243,7 @@ section.products {
   border-radius: 20px;
 }
 
-
+/* Commitment Section */
 section.commit {
   background-color: #202020;
   color: white;
@@ -274,7 +280,7 @@ section.commit .btn:hover {
   background-color: #0056b3;
 }
 
-
+/* Footer Section */
 footer {
   background-color: #333;
   color: white;
@@ -285,58 +291,4 @@ footer {
 
 footer h1 {
   font-size: 18px;
-}
-
-
-
-.card {
-  width: 100%;
-  max-width: 350px;  
-  border: 1px solid #ddd;
-  background-color: white;
-  text-align: center;
-  padding-top: 20px;  
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  margin: 0 auto; 
-}
-
-.card img {
-  width: 100%;  
-  height: 200px;  
-  object-fit: cover;  
-  border-top-left-radius: 10px; 
-  border-top-right-radius: 10px;
-}
-
-.card-body {
-  padding: 20px;
-}
-
-.card-footer {
-  padding: 15px;
-  background-color: transparent;
-  border-top: 1px solid #ddd;
-}
-
-.card-footer .small {
-  color: #777;
-}
-
-.card-footer img {
-  border-radius: 50%;
-}
-
-
-.card:hover {
-  transform: translateY(-10px); 
-}
-
-.card .badge {
-  background-color: #007BFF;
-  color: white;
-  font-size: 14px;
-  padding: 5px 10px;
-  border-radius: 20px;
 }
